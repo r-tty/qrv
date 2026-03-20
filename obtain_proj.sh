@@ -15,6 +15,7 @@ set -euo pipefail
 REPO_URL="https://github.com/vocho/openqnx"
 CLONE_DIR="openqnx_clone"
 PLACEMENT_FILE="placement.txt"
+DEST_DIR="os"
 
 # Check required tools
 for tool in git patch lz4cat; do
@@ -67,6 +68,7 @@ while IFS= read -r line; do
     fi
 
     src="$CLONE_DIR/$oqnx_rel"
+    qrv_path="$DEST_DIR/$qrv_path"
     dest_dir=$(dirname "$qrv_path")
 
     if [ ! -f "$src" ]; then
@@ -119,10 +121,10 @@ if [ -d "patches" ] && [ -f "patches/series" ]; then
         echo "Applying: $patch_name"
         case "$patch_file" in
             *.lz4)
-                lz4cat "$patch_file" | patch -p1
+                lz4cat "$patch_file" | patch -d "$DEST_DIR" -p1
                 ;;
             *)
-                patch -p1 < "$patch_file"
+                patch -d "$DEST_DIR" -p1 < "$patch_file"
                 ;;
         esac
     done < "patches/series"
