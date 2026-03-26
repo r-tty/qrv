@@ -2,8 +2,6 @@
 # Format: openqnx_path    qrv_path
 #
 # Kernel
-trunk/services/system/apm.h                                  kernel/apm.h
-trunk/services/system/aps.h                                  kernel/aps.h
 trunk/services/system/ker/asmoff.c                           kernel/asmoff.c
 trunk/lib/c/asmoff.c                                         kernel/asmoff.c
 trunk/services/system/ker/x86/cpu_debug.c                    kernel/cpu_debug.c
@@ -25,7 +23,6 @@ trunk/services/system/ker/ker_net.c                          kernel/ker_net.c
 trunk/services/system/ker/kerproto.h                         kernel/kerproto.h
 trunk/services/system/ker/ker_ring0.c                        kernel/ker_ring0.c
 trunk/services/system/ker/ker_sched.c                        kernel/ker_sched.c
-trunk/services/system/ker/ker_signal.c                       kernel/ker_signal.c
 trunk/services/system/ker/ker_sync.c                         kernel/ker_sync.c
 trunk/services/system/ker/ker_sys.c                          kernel/ker_sys.c
 trunk/services/system/ker/ker_thread.c                       kernel/ker_thread.c
@@ -69,7 +66,6 @@ trunk/services/system/ker/nano_object.c                      kernel/nano/nano_ob
 trunk/services/system/ker/nano_pulse.c                       kernel/nano/nano_pulse.c
 trunk/services/system/ker/nano_query.c                       kernel/nano/nano_query.c
 trunk/services/system/ker/nano_sched.c                       kernel/nano/nano_sched.c
-trunk/services/system/ker/nano_signal.c                      kernel/nano/nano_signal.c
 trunk/services/system/ker/nano_smp_interrupt.c               kernel/nano/nano_smp_interrupt.c
 trunk/services/system/ker/nano_specret.c                     kernel/nano/nano_specret.c
 trunk/services/system/ker/nano_sync.c                        kernel/nano/nano_sync.c
@@ -101,7 +97,6 @@ trunk/services/system/memmgr/memmgr_shmem.c                  taskman/mem/memmgr_
 trunk/services/system/memmgr/memmgr_support.c                taskman/mem/memmgr_support.c
 trunk/services/system/memmgr/memmgr_tymem.c                  taskman/mem/memmgr_tymem.c
 trunk/services/system/memmgr/mm_anmem.c                      taskman/mem/mm_anmem.c
-trunk/services/system/memmgr/mm_class.c                      taskman/mem/mm_class.c
 trunk/services/system/memmgr/mm_internal.h                   taskman/mem/mm_internal.h
 trunk/services/system/memmgr/mm_map.c                        taskman/mem/mm_map.c
 trunk/services/system/memmgr/mm_memobj.c                     taskman/mem/mm_memobj.c
@@ -224,7 +219,6 @@ trunk/lib/c/1c/pthread_setspecific.c                         lib/libc/1c/pthread
 trunk/lib/c/1/creat.c                                        lib/libc/1/creat.c
 trunk/lib/c/1d/posix_spawnattr_getflags.c                    lib/libc/1d/posix_spawnattr_getflags.c
 trunk/lib/c/1d/posix_spawnattr_getnode.c                     lib/libc/1d/posix_spawnattr_getnode.c
-trunk/lib/c/1d/posix_spawnattr_getpartid.c                   lib/libc/1d/posix_spawnattr_getpartid.c
 trunk/lib/c/1d/posix_spawnattr_getpgroup.c                   lib/libc/1d/posix_spawnattr_getpgroup.c
 trunk/lib/c/1d/posix_spawnattr_getrunmask.c                  lib/libc/1d/posix_spawnattr_getrunmask.c
 trunk/lib/c/1d/posix_spawnattr_getsched.c                    lib/libc/1d/posix_spawnattr_getsched.c
@@ -347,7 +341,9 @@ trunk/lib/c/iofunc/iofunc_utime_default.c                    lib/libc/iofunc/iof
 trunk/lib/c/iofunc/iofunc_write_default.c                    lib/libc/iofunc/iofunc_write_default.c
 trunk/lib/c/iofunc/iofunc_write_verify.c                     lib/libc/iofunc/iofunc_write_verify.c
 trunk/lib/c/kercover/timertimeout.c                          lib/libc/kercover/timertimeout.c
+trunk/lib/c/misc/delay.c                                     lib/libc/qnx/delay.c
 trunk/lib/c/qnx/devctl.c                                     lib/libc/qnx/devctl.c
+trunk/lib/c/qnx/__getset_thread_name.c                       lib/libc/qnx/__getset_thread_name.c
 trunk/lib/c/qnx/iofdinfo.c                                   lib/libc/qnx/iofdinfo.c
 trunk/lib/c/string/itoa.c                                    lib/libc/qnx/itoa.c
 trunk/lib/c/string/lltoa.c                                   lib/libc/qnx/lltoa.c
@@ -422,6 +418,7 @@ trunk/lib/c/stdio/fprintf.c                                  lib/libc/stdio/fpri
 trunk/lib/c/stdio/fputc.c                                    lib/libc/stdio/fputc.c
 trunk/lib/c/stdio/fputs.c                                    lib/libc/stdio/fputs.c
 trunk/lib/c/stdio/fread.c                                    lib/libc/stdio/fread.c
+trunk/lib/c/stdio/ftell.c                                    lib/libc/stdio/ftell.c
 trunk/lib/c/stdio/fwrite.c                                   lib/libc/stdio/fwrite.c
 trunk/lib/c/stdio/perror.c                                   lib/libc/stdio/perror.c
 trunk/lib/c/stdio/printf.c                                   lib/libc/stdio/printf.c
@@ -607,7 +604,6 @@ trunk/services/system/public/sys/mt_trace.h                  include/sys/mt_trac
 trunk/lib/c/public/sys/netmgr.h                              include/sys/netmgr.h
 trunk/lib/c/public/sys/netmsg.h                              include/sys/netmsg.h
 trunk/lib/c/public/sys/param.h                               include/sys/param.h
-trunk/services/system/public/sys/part.h                      include/sys/part.h
 trunk/services/system/public/sys/pathmgr.h                   include/sys/pathmgr.h
 trunk/services/system/public/sys/pathmsg.h                   include/sys/pathmsg.h
 trunk/services/system/public/sys/perfregs.h                  include/sys/perfregs.h
