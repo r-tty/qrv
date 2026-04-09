@@ -218,6 +218,7 @@ trunk/lib/c/unix/chroot.c                                    lib/libc/1/chroot.c
 trunk/lib/c/1/close.c                                        lib/libc/1/close.c
 trunk/lib/c/1c/pthread_attr_default.c                        lib/libc/1c/pthread_attr_default.c
 trunk/lib/c/1c/pthread_attr_init.c                           lib/libc/1c/pthread_attr_init.c
+trunk/lib/c/1c/pthread_attr_setdetachstate.c                 lib/libc/1c/pthread_attr_setdetachstate.c
 trunk/lib/c/1c/pthread_attr_setstacksize.c                   lib/libc/1c/pthread_attr_setstacksize.c
 trunk/lib/c/1c/pthread_condattr_destroy.c                    lib/libc/1c/pthread_condattr_destroy.c
 trunk/lib/c/1c/pthread_condattr_init.c                       lib/libc/1c/pthread_condattr_init.c
@@ -291,6 +292,7 @@ trunk/lib/c/1/tcgetpgrp.c                                    lib/libc/1/tcgetpgr
 trunk/lib/c/1/tcsetattr.c                                    lib/libc/1/tcsetattr.c
 trunk/lib/c/1/tcsetpgrp.c                                    lib/libc/1/tcsetpgrp.c
 trunk/lib/c/unix/tcsetsid.c                                  lib/libc/1/tcsetsid.c
+trunk/lib/c/1/unlink.c                                       lib/libc/1/unlink.c
 trunk/lib/c/1/waitpid.c                                      lib/libc/1/waitpid.c
 trunk/lib/c/1/write.c                                        lib/libc/1/write.c
 trunk/lib/c/alloc/malloc.c                                   lib/libc/alloc/malloc.c
@@ -315,6 +317,7 @@ trunk/lib/c/inc/pthread_key.h                                lib/libc/inc/pthrea
 trunk/lib/c/inc/sleepon.h                                    lib/libc/inc/sleepon.h
 trunk/lib/c/iofunc/iofunc_attr_init.c                        lib/libc/iofunc/iofunc_attr_init.c
 trunk/lib/c/iofunc/iofunc_attr_lock.c                        lib/libc/iofunc/iofunc_attr_lock.c
+trunk/lib/c/iofunc/iofunc_attr_trylock.c                     lib/libc/iofunc/iofunc_attr_trylock.c
 trunk/lib/c/iofunc/iofunc_attr_unlock.c                      lib/libc/iofunc/iofunc_attr_unlock.c
 trunk/lib/c/iofunc/iofunc_check_access.c                     lib/libc/iofunc/iofunc_check_access.c
 trunk/lib/c/iofunc/iofunc_chmod.c                            lib/libc/iofunc/iofunc_chmod.c
@@ -342,6 +345,9 @@ trunk/lib/c/iofunc/iofunc_lseek_default.c                    lib/libc/iofunc/iof
 trunk/lib/c/iofunc/_iofunc_misc.c                            lib/libc/iofunc/_iofunc_misc.c
 trunk/lib/c/iofunc/iofunc_mmap.c                             lib/libc/iofunc/iofunc_mmap.c
 trunk/lib/c/iofunc/iofunc_mmap_default.c                     lib/libc/iofunc/iofunc_mmap_default.c
+trunk/lib/c/iofunc/iofunc_notify.c                           lib/libc/iofunc/iofunc_notify.c
+trunk/lib/c/iofunc/iofunc_notify_remove.c                    lib/libc/iofunc/iofunc_notify_remove.c
+trunk/lib/c/iofunc/iofunc_notify_trigger.c                   lib/libc/iofunc/iofunc_notify_trigger.c
 trunk/lib/c/iofunc/iofunc_ocb_attach.c                       lib/libc/iofunc/iofunc_ocb_attach.c
 trunk/lib/c/iofunc/iofunc_ocb_calloc.c                       lib/libc/iofunc/iofunc_ocb_calloc.c
 trunk/lib/c/iofunc/iofunc_ocb_detach.c                       lib/libc/iofunc/iofunc_ocb_detach.c
@@ -444,6 +450,7 @@ trunk/lib/c/stdio/fprintf.c                                  lib/libc/stdio/fpri
 trunk/lib/c/stdio/fputc.c                                    lib/libc/stdio/fputc.c
 trunk/lib/c/stdio/fputs.c                                    lib/libc/stdio/fputs.c
 trunk/lib/c/stdio/fread.c                                    lib/libc/stdio/fread.c
+trunk/lib/c/stdio/fseek.c                                    lib/libc/stdio/fseek.c
 trunk/lib/c/stdio/ftell.c                                    lib/libc/stdio/ftell.c
 trunk/lib/c/stdio/fwrite.c                                   lib/libc/stdio/fwrite.c
 trunk/lib/c/stdio/perror.c                                   lib/libc/stdio/perror.c
