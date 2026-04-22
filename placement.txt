@@ -206,6 +206,19 @@ trunk/services/system/proc/sysmgr_conf.c                     taskman/sys/sysmgr_
 trunk/services/system/proc/sysmgr_init.c                     taskman/sys/sysmgr_init.c
 trunk/services/system/proc/timestamp.c                       taskman/sys/timestamp.c
 
+# Servers (slogger, pci — pci is QRV-original, no baseline)
+trunk/services/slogger/externs.c                             servers/slogger/externs.c
+trunk/services/slogger/io_notify.c                           servers/slogger/io_notify.c
+trunk/services/slogger/io_read.c                             servers/slogger/io_read.c
+trunk/services/slogger/io_unblock.c                          servers/slogger/io_unblock.c
+trunk/services/slogger/io_unlink.c                           servers/slogger/io_unlink.c
+trunk/services/slogger/io_write.c                            servers/slogger/io_write.c
+trunk/services/slogger/logger.c                              servers/slogger/logger.c
+trunk/services/slogger/main.c                                servers/slogger/main.c
+trunk/services/slogger/options.c                             servers/slogger/options.c
+trunk/services/slogger/proto.h                               servers/slogger/proto.h
+trunk/services/slogger/struct.h                              servers/slogger/struct.h
+
 # libc
 trunk/lib/c/1/access.c                                       lib/libc/1/access.c
 trunk/lib/c/1a/confstr.c                                     lib/libc/1a/confstr.c
