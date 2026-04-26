@@ -276,11 +276,13 @@ trunk/lib/c/1d/posix_spawnattr.h                             lib/libc/1d/posix_s
 trunk/lib/c/1d/posix_spawnattr_init.c                        lib/libc/1d/posix_spawnattr_init.c
 trunk/lib/c/1d/posix_spawnattr_private.c                     lib/libc/1d/posix_spawnattr_private.c
 trunk/lib/c/1d/posix_spawnattr_support.c                     lib/libc/1d/posix_spawnattr_support.c
+trunk/lib/c/1d/posix_spawn.c                                 lib/libc/1d/posix_spawn.c
 trunk/lib/c/1d/posix_spawn_file_actions.h                    lib/libc/1d/posix_spawn_file_actions.h
 trunk/lib/c/1d/posix_spawn_file_actions_init.c               lib/libc/1d/posix_spawn_file_actions_init.c
 trunk/lib/c/1d/posix_spawn_file_actions_private.c            lib/libc/1d/posix_spawn_file_actions_private.c
 trunk/lib/c/1d/posix_spawn_file_actions_support.c            lib/libc/1d/posix_spawn_file_actions_support.c
 trunk/lib/c/1d/posix_spawn_file_getactions.c                 lib/libc/1d/posix_spawn_file_getactions.c
+trunk/lib/c/1d/posix_spawnp.c                                lib/libc/1d/posix_spawnp.c
 trunk/lib/c/1/dup.c                                          lib/libc/1/dup.c
 trunk/lib/c/ansi/_exit.c                                     lib/libc/1/_exit.c
 trunk/lib/c/1/fcntl.c                                        lib/libc/1/fcntl.c
