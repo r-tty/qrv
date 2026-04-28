@@ -397,8 +397,10 @@ trunk/lib/c/iofunc/iofunc_utime_default.c                    lib/libc/iofunc/iof
 trunk/lib/c/iofunc/iofunc_write_default.c                    lib/libc/iofunc/iofunc_write_default.c
 trunk/lib/c/iofunc/iofunc_write_verify.c                     lib/libc/iofunc/iofunc_write_verify.c
 trunk/lib/c/kercover/timertimeout.c                          lib/libc/kercover/timertimeout.c
+trunk/lib/c/xopen/crypt.c                                    lib/libc/qrv/crypt.c
 trunk/lib/c/misc/delay.c                                     lib/libc/qrv/delay.c
 trunk/lib/c/qnx/devctl.c                                     lib/libc/qrv/devctl.c
+trunk/lib/c/unix/getpass.c                                   lib/libc/qrv/getpass.c
 trunk/lib/c/qnx/__getset_thread_name.c                       lib/libc/qrv/__getset_thread_name.c
 trunk/lib/c/qnx/iofdinfo.c                                   lib/libc/qrv/iofdinfo.c
 trunk/lib/c/string/itoa.c                                    lib/libc/qrv/itoa.c
