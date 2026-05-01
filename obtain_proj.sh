@@ -132,5 +132,15 @@ if [ -d "patches" ] && [ -f "patches/series" ]; then
     echo "All patches applied."
 fi
 
-echo ""
+# ---------------------------------------------------------------
+# 5) Set +x permissions for essential executables
+# ---------------------------------------------------------------
+echo
+executables="emu.sh host_tools/mkgpt.py"
+for e in $executables; do
+    echo "Setting +x permission for: os/$e"
+    chmod +x os/$e
+done
+
+echo
 echo "Done."
