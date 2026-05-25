@@ -136,10 +136,17 @@ fi
 # 5) Set +x permissions for essential executables
 # ---------------------------------------------------------------
 echo
+# These are QRV files created by the patch series (step 4), not by the
+# QNX placement (step 2).  When this script runs against a patch-less
+# baseline tree (e.g. from gen_release.sh) they are absent, so chmod
+# only the ones that actually exist — symmetric with the conditional
+# patch block above.
 executables="emu.sh host_tools/mkgpt.py"
 for e in $executables; do
-    echo "Setting +x permission for: os/$e"
-    chmod +x os/$e
+    if [ -f "os/$e" ]; then
+        echo "Setting +x permission for: os/$e"
+        chmod +x os/$e
+    fi
 done
 
 echo
