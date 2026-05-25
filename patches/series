@@ -1,8 +1,8 @@
-# QRV-OS patch series — v0.27
+# QRV-OS patch series — v0.42
 # Apply in order with: lz4cat <patch>.lz4 | patch -p1
-0001-QRV-v0.27-include.patch.lz4
-0002-QRV-v0.27-kernel.patch.lz4
-0003-QRV-v0.27-lib.patch.lz4
-0004-QRV-v0.27-taskman.patch.lz4
-0005-QRV-v0.27-servers.patch.lz4
-0006-QRV-v0.27-rest.patch.lz4
+0001-QRV-v0.42-include.patch.lz4
+0002-QRV-v0.42-kernel.patch.lz4
+0003-QRV-v0.42-lib.patch.lz4
+0004-QRV-v0.42-taskman.patch.lz4
+0005-QRV-v0.42-servers.patch.lz4
+0006-QRV-v0.42-rest.patch.lz4

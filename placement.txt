@@ -5,7 +5,6 @@
 trunk/services/system/ker/nano_alloc.c                       kernel/nano/nano_alloc.c
 trunk/services/system/ker/nano_asyncmsg.c                    kernel/nano/nano_asyncmsg.c
 trunk/services/system/ker/nano_clock.c                       kernel/nano/nano_clock.c
-trunk/services/system/ker/nano_conf.c                        kernel/nano/nano_conf.c
 trunk/services/system/ker/nano_connect.c                     kernel/nano/nano_connect.c
 trunk/services/system/ker/nano_cred.c                        kernel/nano/nano_cred.c
 trunk/services/system/ker/nano_debug.c                       kernel/nano/nano_debug.c
@@ -34,8 +33,6 @@ trunk/services/system/ker/nano_xfer_len.c                    kernel/nano/nano_xf
 trunk/services/system/ker/nano_xfer_msg.c                    kernel/nano/nano_xfer_msg.c
 trunk/services/system/ker/nano_xfer_pulse.c                  kernel/nano/nano_xfer_pulse.c
 trunk/services/system/ker/kerext_bind.c                      kernel/kext/kerext_bind.c
-trunk/services/system/ker/kerext_cache.c                     kernel/kext/kerext_cache.c
-trunk/services/system/ker/kerext_cpumode.c                   kernel/kext/kerext_cpumode.c
 trunk/services/system/ker/kerext_cred.c                      kernel/kext/kerext_cred.c
 trunk/services/system/ker/kerext_debug.c                     kernel/kext/kerext_debug.c
 trunk/services/system/ker/kerext_idle.c                      kernel/kext/kerext_idle.c
@@ -63,7 +60,6 @@ trunk/services/system/ker/kermacros.h                        kernel/kermacros.h
 trunk/services/system/ker/ker_message.c                      kernel/ker_message.c
 trunk/services/system/ker/ker_net.c                          kernel/ker_net.c
 trunk/services/system/ker/kerproto.h                         kernel/kerproto.h
-trunk/services/system/ker/ker_ring0.c                        kernel/ker_ring0.c
 trunk/services/system/ker/ker_sched.c                        kernel/ker_sched.c
 trunk/services/system/ker/ker_sync.c                         kernel/ker_sync.c
 trunk/services/system/ker/ker_sys.c                          kernel/ker_sys.c
@@ -72,8 +68,6 @@ trunk/services/system/ker/ker_timer.c                        kernel/ker_timer.c
 trunk/services/system/ker/kertrace.h                         kernel/kertrace.h
 trunk/services/system/ker/kexterns.c                         kernel/kexterns.c
 trunk/services/system/ker/kerext_bind.c                      kernel/kext/kerext_bind.c
-trunk/services/system/ker/kerext_cache.c                     kernel/kext/kerext_cache.c
-trunk/services/system/ker/kerext_cpumode.c                   kernel/kext/kerext_cpumode.c
 trunk/services/system/ker/kerext_cred.c                      kernel/kext/kerext_cred.c
 trunk/services/system/ker/kerext_debug.c                     kernel/kext/kerext_debug.c
 trunk/services/system/ker/kerext_idle.c                      kernel/kext/kerext_idle.c
@@ -90,7 +84,6 @@ trunk/services/system/ker/kprintf.c                          kernel/kprintf.c
 trunk/services/system/ker/nano_alloc.c                       kernel/nano/nano_alloc.c
 trunk/services/system/ker/nano_asyncmsg.c                    kernel/nano/nano_asyncmsg.c
 trunk/services/system/ker/nano_clock.c                       kernel/nano/nano_clock.c
-trunk/services/system/ker/nano_conf.c                        kernel/nano/nano_conf.c
 trunk/services/system/ker/nano_connect.c                     kernel/nano/nano_connect.c
 trunk/services/system/ker/nano_cred.c                        kernel/nano/nano_cred.c
 trunk/services/system/ker/nano_debug.c                       kernel/nano/nano_debug.c
@@ -187,7 +180,6 @@ trunk/services/system/pathmgr/procfs.h                       taskman/path/procfs
 
 # Taskman — sys/ (support, message, loader)
 trunk/services/system/proc/bootimage_init.c                  taskman/sys/bootimage_init.c
-trunk/services/system/proc/externs.c                         taskman/sys/externs.c
 trunk/services/system/proc/gcov_begin.c                      taskman/sys/gcov_begin.c
 trunk/services/system/proc/gcov_end.c                        taskman/sys/gcov_end.c
 trunk/services/system/proc/loader_elf.c                      taskman/sys/loader_elf.c
@@ -204,7 +196,6 @@ trunk/services/system/proc/support.c                         taskman/sys/support
 trunk/services/system/proc/sysmgr_cmd.c                      taskman/sys/sysmgr_cmd.c
 trunk/services/system/proc/sysmgr_conf.c                     taskman/sys/sysmgr_conf.c
 trunk/services/system/proc/sysmgr_init.c                     taskman/sys/sysmgr_init.c
-trunk/services/system/proc/timestamp.c                       taskman/sys/timestamp.c
 
 # Servers (slogger, pci — pci is QRV-original, no baseline)
 trunk/services/slogger/externs.c                             servers/slogger/externs.c
